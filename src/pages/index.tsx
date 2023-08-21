@@ -9,7 +9,7 @@ import Package from '@/components/Package';
 
 export default function Home() {
   return (
-    <>
+    <div className='font-monda'>
       <Navigation />
       <Hero />
       <About />
@@ -18,6 +18,6 @@ export default function Home() {
       <Package />
       <Footer />
       <Footer2 />
-    </>
+    </div>
   );
 }

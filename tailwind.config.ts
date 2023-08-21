@@ -16,6 +16,9 @@ const config: Config = {
       boxShadow: {
         custom: '1px 1px 3px 2px rgba(229, 229, 229, 1)',
       },
+      fontFamily: {
+        monda: ['Monda', 'sans-serif'],
+      },
     },
   },
   plugins: [],

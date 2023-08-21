@@ -25,8 +25,8 @@ const Navigation: React.FC<{}> = (props: Props) => {
           </a>
         </div>
         <div className=" ml-8">
-          <a href="" className=" hover:text-slate-400">
-            <span>CONTACT</span>
+          <a href="" className=" hover:text-slate-400 transition-all duration-200 ease-in-out">
+            <span className=''>CONTACT</span>
           </a>
         </div>
         <div className={`p-2 ${styles.topBottomG} hover:text-white cursor-pointer ml-14 text-[#fac433]`}>
