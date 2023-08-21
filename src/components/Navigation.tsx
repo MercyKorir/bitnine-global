@@ -36,7 +36,7 @@ const Navigation: React.FC<{}> = (props: Props) => {
         </div>
         <div className={`p-2 ${styles.topBottomY} cursor-pointer`}>
           <a href="">
-            <FontAwesomeIcon className="w-[21px] h-[21px]" icon={faYoutube} />
+            <FontAwesomeIcon className="w-[20px] h-[20px]" icon={faYoutube} />
           </a>
         </div>
         <div className={`p-2 ${styles.topBottomL} cursor-pointer`}>
