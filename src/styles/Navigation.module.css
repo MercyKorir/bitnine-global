@@ -40,7 +40,7 @@
 }
 .topBottomM {
     background: linear-gradient(to bottom, #30b570 50%, transparent 50%);
-    background-size: 100% 202%;
+    background-size: 100% 200%;
     background-position: bottom left;
     transition: all .3s ease-out;
 }
