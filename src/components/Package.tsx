@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 type Props = {};
 
@@ -38,10 +39,14 @@ const Package: React.FC<{}> = (props: Props) => {
               </h5>
             </div>
             <div className=" mb-5">
-              <img
-                className="h-auto w-[600px]"
-                src="https://bitnine.net/wp-content/uploads/2022/04/img_AHM_eng-1024x922.png"
-                alt=""
+              <Image
+                src={
+                  'https://bitnine.net/wp-content/uploads/2022/04/img_AHM_eng-1024x922.png'
+                }
+                alt="HA Manager Image"
+                width={600}
+                height={400}
+                className="h-auto"
               />
             </div>
             <div>

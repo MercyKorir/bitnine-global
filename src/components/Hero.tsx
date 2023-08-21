@@ -8,10 +8,13 @@ const Hero: React.FC<{}> = (props: Props) => {
     <section className="h-[83vh] bg-white">
       <div className="flex flex-col items-center p-16">
         <div className="">
-          <img
-            src="https://bitnine.net/wp-content/uploads/2022/04/AgenSQL-Logo.png"
-            alt=""
-            className="w-[301px] h-[61px]"
+          <Image
+            src={
+              'https://bitnine.net/wp-content/uploads/2022/04/AgenSQL-Logo.png'
+            }
+            alt="AgensSQL Image"
+            width={301}
+            height={61}
           />
         </div>
         <div className=" mt-10 mb-[10px]">
@@ -41,22 +44,22 @@ const Hero: React.FC<{}> = (props: Props) => {
             maintenance cost.
           </p>
         </div>
-        <div className=' flex flex-row justify-between gap-10 text-white mt-16'>
-            <div className='bg-[#022EA9] px-5 py-2 rounded-[0.225rem] hover:text-[#fac433] cursor-pointer'>
-                <a href="" className=''>
-                    <span className=' font-semibold'>CONTACT</span>
-                </a>
-            </div>
-            <div className='bg-[#022EA9] px-5 py-2 rounded-[0.225rem] hover:text-[#fac433] cursor-pointer'>
-                <a href="" className=''>
-                    <span className=' font-semibold'>BROCHURE</span>
-                </a>
-            </div>
-            <div className='bg-[#022EA9] px-5 py-2 rounded-[0.225rem] hover:text-[#fac433] cursor-pointer'>
-                <a href="" className=''>
-                    <span className=' font-semibold'>BLOG</span>
-                </a>
-            </div>
+        <div className=" flex flex-row justify-between gap-10 text-white mt-16">
+          <div className="bg-[#022EA9] px-5 py-2 rounded-[0.225rem] hover:text-[#fac433] cursor-pointer">
+            <a href="" className="">
+              <span className=" font-semibold">CONTACT</span>
+            </a>
+          </div>
+          <div className="bg-[#022EA9] px-5 py-2 rounded-[0.225rem] hover:text-[#fac433] cursor-pointer">
+            <a href="" className="">
+              <span className=" font-semibold">BROCHURE</span>
+            </a>
+          </div>
+          <div className="bg-[#022EA9] px-5 py-2 rounded-[0.225rem] hover:text-[#fac433] cursor-pointer">
+            <a href="" className="">
+              <span className=" font-semibold">BLOG</span>
+            </a>
+          </div>
         </div>
       </div>
     </section>

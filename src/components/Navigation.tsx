@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
@@ -39,7 +40,10 @@ const Navigation: React.FC<{}> = (props: Props) => {
         </div>
         <div className="p-2 hover:bg-[#0077b5] cursor-pointer">
           <a href="">
-            <FontAwesomeIcon className=" bg-transparent w-5 h-5" icon={faLinkedinIn} />
+            <FontAwesomeIcon
+              className=" bg-transparent w-5 h-5"
+              icon={faLinkedinIn}
+            />
           </a>
         </div>
         <div className="p-2 hover:bg-[#3b5998] cursor-pointer">
@@ -57,10 +61,13 @@ const Navigation: React.FC<{}> = (props: Props) => {
         <div className="">
           <div>
             <a href="/">
-              <img
-                src="https://bitnine.net/wp-content/uploads/2023/08/bitnine-logo_.png"
-                alt="logo"
-                className=" w-[235px] h-[61px]"
+              <Image
+                src={
+                  'https://bitnine.net/wp-content/uploads/2023/08/bitnine-logo_.png'
+                }
+                alt="Logo Image"
+                width={235}
+                height={61}
               />
             </a>
           </div>
