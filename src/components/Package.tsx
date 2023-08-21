@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import FlipCard from './FlipCard';
 
 type Props = {};
 
@@ -62,7 +63,49 @@ const Package: React.FC<{}> = (props: Props) => {
               </h5>
             </div>
             <div className="mt-[20px] gap-[12px] flex flex-col">
-              <div className="h-[85px] w-[500px] border-2 rounded-[8px] bg-white border-[#0082CB] px-6 py-4 flex flex-col items-center justify-center">
+              <FlipCard
+                frontTitle="Backup/Restore"
+                backItems={[
+                  'provides a convenient interface for backup & restore',
+                  'provides backup & restore features for DB and table objects',
+                ]}
+              />
+              <FlipCard
+                frontTitle="DB Monitoring Dashboard"
+                backItems={[
+                  'monitors real-time session & transaction lock',
+                  'provides status for server CPU & memory',
+                ]}
+              />
+              <FlipCard
+                frontTitle="Schedule Management"
+                backItems={[
+                  'provides module for script, SQL job, & scheduling management',
+                  'provides UX dedicated to scheduling',
+                ]}
+              />
+              <FlipCard
+                frontTitle="Database Audit"
+                backItems={[
+                  'enables auditing via user interface',
+                  'view audit results via user interface',
+                ]}
+              />
+              <FlipCard
+                frontTitle="SQL Monitoring"
+                backItems={[
+                  'collects query statistics required for performance analysis',
+                  'extracts monitoring results in query',
+                ]}
+              />
+              <FlipCard
+                frontTitle="Performance Management"
+                backItems={[
+                  'monitors and collects operation status & statistical data',
+                  'provides status reports required for improving performance',
+                ]}
+              />
+              {/* <div className="h-[85px] w-[500px] border-2 rounded-[8px] bg-white border-[#0082CB] px-6 py-4 flex flex-col items-center justify-center">
                 <h4 className="text-[16px] text-center text-[#0082cb]">
                   Backup/Restore
                 </h4>
@@ -91,7 +134,7 @@ const Package: React.FC<{}> = (props: Props) => {
                 <h4 className="text-[16px] text-[#0082cb] text-center">
                   Performance Management
                 </h4>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
