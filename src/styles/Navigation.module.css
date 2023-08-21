@@ -1,0 +1,50 @@
+.topBottomG {
+    background: linear-gradient(to bottom, #666666 50%, transparent 50%);
+    background-size: 100% 200%;
+    background-position: bottom left;
+    transition: all .3s ease-out;
+}
+
+.topBottomG:hover {
+    background-position: top left;
+}
+.topBottomY {
+    background: linear-gradient(to bottom, #DC2626 50%, transparent 50%);
+    background-size: 100% 200%;
+    background-position: bottom left;
+    transition: all .3s ease-out;
+}
+
+.topBottomY:hover {
+    background-position: top left;
+}
+.topBottomL {
+    background: linear-gradient(to bottom, #0077b5 50%, transparent 50%);
+    background-size: 100% 200%;
+    background-position: bottom left;
+    transition: all .3s ease-out;
+}
+
+.topBottomL:hover {
+    background-position: top left;
+}
+.topBottomF {
+    background: linear-gradient(to bottom, #3b5998 50%, transparent 50%);
+    background-size: 100% 200%;
+    background-position: bottom left;
+    transition: all .3s ease-out;
+}
+
+.topBottomF:hover {
+    background-position: top left;
+}
+.topBottomM {
+    background: linear-gradient(to bottom, #30b570 50%, transparent 50%);
+    background-size: 100% 200%;
+    background-position: bottom left;
+    transition: all .3s ease-out;
+}
+
+.topBottomM:hover {
+    background-position: top left;
+}

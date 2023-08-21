@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import styles from '../styles/Navigation.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
@@ -28,17 +29,17 @@ const Navigation: React.FC<{}> = (props: Props) => {
             <span>CONTACT</span>
           </a>
         </div>
-        <div className="p-2 hover:bg-[#666666] hover:text-white cursor-pointer ml-14 text-[#fac433]">
+        <div className={`p-2 ${styles.topBottomG} hover:text-white cursor-pointer ml-14 text-[#fac433]`}>
           <a href="">
             <FontAwesomeIcon className="w-5 h-5" icon={faGithub} />
           </a>
         </div>
-        <div className="p-2 hover:bg-red-600 cursor-pointer">
+        <div className={`p-2 ${styles.topBottomY} cursor-pointer`}>
           <a href="">
             <FontAwesomeIcon className="w-[21px] h-[21px]" icon={faYoutube} />
           </a>
         </div>
-        <div className="p-2 hover:bg-[#0077b5] cursor-pointer">
+        <div className={`p-2 ${styles.topBottomL} cursor-pointer`}>
           <a href="">
             <FontAwesomeIcon
               className=" bg-transparent w-5 h-5"
@@ -46,12 +47,12 @@ const Navigation: React.FC<{}> = (props: Props) => {
             />
           </a>
         </div>
-        <div className="p-2 hover:bg-[#3b5998] cursor-pointer">
+        <div className={`p-2 ${styles.topBottomF} cursor-pointer`}>
           <a href="">
             <FontAwesomeIcon className="w-5 h-5" icon={faFacebook} />
           </a>
         </div>
-        <div className="p-2 hover:bg-[#30b570] cursor-pointer">
+        <div className={`p-2 ${styles.topBottomM} cursor-pointer`}>
           <a href="">
             <FontAwesomeIcon className="w-[23px] h-[23px]" icon={faMedium} />
           </a>
