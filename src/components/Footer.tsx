@@ -10,13 +10,13 @@ const Footer: React.FC<{}> = (props: Props) => {
           <div className=' mb-2 font-bold'>PRODUCTS</div>
           <div className='flex flex-col gap-1'>
             <div>
-              <a href="" className=' font-semibold hover:text-[#4a8eff]'>Relational Databases</a>
+              <a href="" className='  hover:text-[#4a8eff]'>Relational Databases</a>
             </div>
             <div>
-              <a href="" className=' font-semibold hover:text-[#4a8eff]'>Graph Database</a>
+              <a href="" className=' hover:text-[#4a8eff]'>Graph Database</a>
             </div>
             <div>
-              <a href="" className=' font-semibold hover:text-[#4a8eff]'>Graph-based Solution</a>
+              <a href="" className=' hover:text-[#4a8eff]'>Graph-based Solution</a>
             </div>
           </div>
         </div>
@@ -30,10 +30,10 @@ const Footer: React.FC<{}> = (props: Props) => {
           <div className=' mb-2 font-bold'>RESOURCES</div>
           <div className='flex flex-col gap-1'>
             <div>
-              <a href="" className=' font-semibold hover:text-[#4a8eff]'>Documentation</a>
+              <a href="" className='hover:text-[#4a8eff]'>Documentation</a>
             </div>
             <div>
-              <a href="" className=' font-semibold hover:text-[#4a8eff]'>Learn</a>
+              <a href="" className='hover:text-[#4a8eff]'>Learn</a>
             </div>
           </div>
         </div>
@@ -44,10 +44,10 @@ const Footer: React.FC<{}> = (props: Props) => {
           <div className=' mb-2 font-bold'>COMPANY</div>
           <div className='flex flex-col gap-1'>
             <div>
-              <a href="" className=' font-semibold hover:text-[#4a8eff]'>About Us</a>
+              <a href="" className='hover:text-[#4a8eff]'>About Us</a>
             </div>
             <div>
-                <a href="" className=' font-semibold hover:text-[#4a8eff]'>Contact</a>
+                <a href="" className='hover:text-[#4a8eff]'>Contact</a>
             </div>
           </div>
         </div>
