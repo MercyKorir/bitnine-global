@@ -16,6 +16,7 @@ import { useRouter } from 'next/router';
 import axios, { AxiosError } from 'axios';
 import { ErrorText } from '@/components/InputFieldElements';
 import { getErrorMsg, loginUser } from '@/helpers';
+import Button from './Button';
 
 type Props = {};
 
@@ -65,6 +66,15 @@ const SignUpForm: React.FC<{}> = (props: Props) => {
         );
         if (res?.data?.success) {
           //save data in session using next auth
+          const loginRes = await loginUser({
+            email: data.email,
+            password: data.password,
+          });
+          if (loginRes && !loginRes.ok) {
+            setSumbitError(loginRes.error || '');
+          } else {
+            router.push('/');
+          }
         }
       } catch (err: unknown) {
         if (err instanceof AxiosError) {
@@ -123,9 +133,7 @@ const SignUpForm: React.FC<{}> = (props: Props) => {
           required
           error={getErrorMsg('confirmPassword', validateErrors)}
         />
-        <button type="submit" disabled={loading}>
-          Sign Up
-        </button>
+        <Button title={'Sign Up'} type="submit" disabled={loading} />
         {submitError && <ErrorText>{submitError}</ErrorText>}
         <InfoTextContainer>
           <InfoText>Already have account?</InfoText>
