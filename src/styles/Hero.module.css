@@ -1,0 +1,12 @@
+.heroButton {
+    background: linear-gradient(to bottom, #000 50%, #022EA9 50%);
+    background-size: 100% 202%;
+    background-position: bottom left;
+    transition: all .3s ease-out;
+}
+
+.heroButton:hover {
+    filter: brightness(80%);
+    background-position: top left;
+}
+

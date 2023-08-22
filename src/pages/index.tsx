@@ -6,18 +6,12 @@ import Footer2 from '@/components/Footer2';
 import Hero from '@/components/Hero';
 import Navigation from '@/components/Navigation';
 import Package from '@/components/Package';
+import SignUpForm from '@/components/SignUpForm';
 
 export default function Home() {
   return (
     <div className='font-monda'>
-      <Navigation />
-      <Hero />
-      <About />
-      <Features />
-      <Features2 />
-      <Package />
-      <Footer />
-      <Footer2 />
+      <SignUpForm/>
     </div>
   );
 }

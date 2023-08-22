@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import styles from '../styles/Hero.module.css'
 
 type Props = {};
 
@@ -45,17 +46,17 @@ const Hero: React.FC<{}> = (props: Props) => {
           </p>
         </div>
         <div className=" flex flex-row justify-between gap-10 text-white mt-16">
-          <div className="bg-[#022EA9] px-5 py-2 rounded-[0.225rem] hover:text-[#fac433] cursor-pointer">
+          <div className={`${styles.heroButton} bg-[#022EA9] px-5 py-2 rounded-[0.225rem] hover:text-[#fac433] cursor-pointer`}>
             <a href="" className="">
               <span className=" font-semibold">CONTACT</span>
             </a>
           </div>
-          <div className="bg-[#022EA9] px-5 py-2 rounded-[0.225rem] hover:text-[#fac433] cursor-pointer">
+          <div className={`${styles.heroButton} bg-[#022EA9] px-5 py-2 rounded-[0.225rem] hover:text-[#fac433] cursor-pointer`}>
             <a href="" className="">
               <span className=" font-semibold">BROCHURE</span>
             </a>
           </div>
-          <div className="bg-[#022EA9] px-5 py-2 rounded-[0.225rem] hover:text-[#fac433] cursor-pointer">
+          <div className={`${styles.heroButton} bg-[#022EA9] px-5 py-2 rounded-[0.225rem] hover:text-[#fac433] cursor-pointer`}>
             <a href="" className="">
               <span className=" font-semibold">BLOG</span>
             </a>
