@@ -143,10 +143,8 @@ const Navigation: React.FC<{}> = (props: Props) => {
                 </Link>
               ) : (
                 <Link href="/login">
-                  <button className=" bg-[#022EA9] px-3 py-1 rounded-[0.225rem]">
-                    <a href="" className="hover:text-[#fac433]">
-                      Login
-                    </a>
+                  <button className=" bg-[#022EA9] px-3 py-1 rounded-[0.225rem] hover:text-[#fac433]">
+                    Login
                   </button>
                 </Link>
               )}
