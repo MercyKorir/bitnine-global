@@ -28,7 +28,7 @@ type Props = {};
 const Navigation: React.FC<{}> = (props: Props) => {
   const { data: session } = useSession();
   return (
-    <nav className="flex flex-col bg-black h-[17vh] w-full fixed top-0 z-50">
+    <nav className="flex flex-col bg-black min-h-[17vh] w-full">
       <div className="h-1/3 flex flex-row justify-end px-1 items-center text-white">
         <div className="">
           <a href="" className="hover:text-slate-400">

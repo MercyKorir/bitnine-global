@@ -6,7 +6,7 @@ type Props = {};
 
 const Hero: React.FC<{}> = (props: Props) => {
   return (
-    <section className="h-[83vh] bg-white">
+    <section className="min-h-[83vh] bg-white">
       <div className="flex flex-col items-center p-16">
         <div className="">
           <Image

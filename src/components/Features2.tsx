@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from 'next/image';
+import FadeInCard from './FadeInCard';
 
 type Props = {};
 
@@ -31,39 +31,32 @@ const Features2: React.FC<{}> = (props: Props) => {
           </p>
         </div>
         <div className="flex flex-row gap-5 px-60 mt-14">
-          <div className=" w-1/3 shadow-custom border-[1px] border-[#D1D1D1] bg-white rounded-[10px] h-fit px-[5%] py-[3%]">
-            <Image
-              src={
-                'https://bitnine.net/wp-content/uploads/2022/04/Password-Profile.png'
-              }
-              alt=""
-              width={300}
-              height={200}
-              className="h-auto max-w-full"
-            />
-          </div>
-          <div className=" w-1/3 shadow-custom border-[1px] border-[#D1D1D1] bg-white rounded-[10px] h-fit px-[5%] py-[3%]">
-            <Image
-              src={
-                'https://bitnine.net/wp-content/uploads/2022/04/Data-Redaction.png'
-              }
-              alt=""
-              width={300}
-              height={200}
-              className="h-auto max-w-full"
-            />
-          </div>
-          <div className=" w-1/3 shadow-custom border-[1px] border-[#D1D1D1] bg-white rounded-[10px] h-fit px-[5%] py-[3%]">
-            <Image
-              src={
-                'https://bitnine.net/wp-content/uploads/2022/04/Auditing.png'
-              }
-              alt=""
-              width={300}
-              height={200}
-              className="h-auto max-w-full"
-            />
-          </div>
+          <FadeInCard
+            imageUrl="https://bitnine.net/wp-content/uploads/2022/04/Password-Profile.png"
+            backItems={[
+              'user password policy reinforces login security',
+              'excessive failed login attempts lock an account',
+              'define rules for password complexity',
+            ]}
+          />
+
+          <FadeInCard
+            imageUrl="https://bitnine.net/wp-content/uploads/2022/04/Data-Redaction.png"
+            backItems={[
+              'enhanced data security of user personal information',
+              'resolve privacy issues in preparation for security audits',
+              'encryption or masking with unidentifiable special characters',
+            ]}
+          />
+
+          <FadeInCard
+            imageUrl="https://bitnine.net/wp-content/uploads/2022/04/Auditing.png"
+            backItems={[
+              'monitors database activities and collects data',
+              'traces object accessed or DDL &amp; DML statements executed by a user',
+              'records all actions in logs',
+            ]}
+          />
         </div>
       </div>
     </section>

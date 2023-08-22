@@ -1,0 +1,50 @@
+.card {
+    transition: all .7s ease-in-out;
+}
+.cardText {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  padding: 30px 40px;
+  top: 0;
+  left: 0;
+  text-align: left;
+  transition: opacity .7s ease-in-out;
+  -moz-transition: opacity .7s ease-in-out;
+  -webkit-transition: opacity .7s ease-in-out;
+}
+.cardText:first-child {
+    opacity: 1;
+}
+.cardText:last-child {
+    opacity: 0;
+    transform: scale(0.1);
+    transition: opacity .7s ease-in-out, transform .7s ease-in-out;
+}
+
+.card:hover > .cardText:first-child {
+    opacity: 0;
+}
+.card:hover > .cardText:last-child {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* @media (max-width: 600px) {
+  .card {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+  }
+
+  .cardText {
+    width: auto;
+  }
+} */
