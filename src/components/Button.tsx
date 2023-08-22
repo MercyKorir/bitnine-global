@@ -7,7 +7,7 @@ type Props = {};
 const Button: React.FC<ButtonProps> = ({ title, type, disabled, onClick }) => {
   return (
     <Container type={type} disabled={disabled} onClick={onClick}>
-      {title}
+      {disabled ? 'Processing...' : title}
     </Container>
   );
 };

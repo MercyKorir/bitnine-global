@@ -1,9 +1,10 @@
 import React from 'react';
 import Image from 'next/image';
-import styles from '../styles/Navigation.module.css'
+import styles from '../styles/Navigation.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import { faSearch, faPerson } from '@fortawesome/free-solid-svg-icons';
+import { useSession } from 'next-auth/react';
 import {
   faFacebook,
   faGithub,
@@ -11,11 +12,21 @@ import {
   faLinkedinIn,
   faMedium,
 } from '@fortawesome/free-brands-svg-icons';
-library.add(faFacebook, faGithub, faYoutube, faLinkedinIn, faMedium, faSearch);
+import Link from 'next/link';
+library.add(
+  faFacebook,
+  faGithub,
+  faYoutube,
+  faLinkedinIn,
+  faMedium,
+  faSearch,
+  faPerson
+);
 
 type Props = {};
 
 const Navigation: React.FC<{}> = (props: Props) => {
+  const { data: session } = useSession();
   return (
     <nav className="flex flex-col bg-black h-[17vh] w-full fixed top-0 z-50">
       <div className="h-1/3 flex flex-row justify-end px-1 items-center text-white">
@@ -25,11 +36,16 @@ const Navigation: React.FC<{}> = (props: Props) => {
           </a>
         </div>
         <div className=" ml-8">
-          <a href="" className=" hover:text-slate-400 transition-all duration-200 ease-in-out">
-            <span className=''>CONTACT</span>
+          <a
+            href=""
+            className=" hover:text-slate-400 transition-all duration-200 ease-in-out"
+          >
+            <span className="">CONTACT</span>
           </a>
         </div>
-        <div className={`p-2 ${styles.topBottomG} hover:text-white cursor-pointer ml-14 text-[#fac433]`}>
+        <div
+          className={`p-2 ${styles.topBottomG} hover:text-white cursor-pointer ml-14 text-[#fac433]`}
+        >
           <a href="">
             <FontAwesomeIcon className="w-5 h-5" icon={faGithub} />
           </a>
@@ -116,6 +132,24 @@ const Navigation: React.FC<{}> = (props: Props) => {
                   TRY FREE
                 </a>
               </button>
+            </li>
+            <li className="ml-5">
+              {session ? (
+                <Link href="/profile">
+                  <FontAwesomeIcon
+                    className="w-[23px] h-[23px]"
+                    icon={faPerson}
+                  />
+                </Link>
+              ) : (
+                <Link href="/login">
+                  <button className=" bg-[#022EA9] px-3 py-1 rounded-[0.225rem]">
+                    <a href="" className="hover:text-[#fac433]">
+                      Login
+                    </a>
+                  </button>
+                </Link>
+              )}
             </li>
           </ul>
         </div>
