@@ -6,16 +6,16 @@ type Props = {};
 
 const Package: React.FC<{}> = (props: Props) => {
   return (
-    <section className="min-h-[100vh] bg-white py-20">
+    <section className="min-h-[100vh] bg-white px-3 xs:px-0 py-16 xs:py-20">
       <div className="flex flex-col items-center gap-6">
         <div className="flex flex-col">
           <div className=" mb-[14px]">
-            <h2 className="text-center text-black text-[34px]">
+            <h2 className="text-center text-black text-[23px] xs:text-[30px] sm:text-[34px]">
               <strong>Agens Enterprise Package</strong>
             </h2>
           </div>
           <div>
-            <p className="text-center text-[#666666] text-[18px]">
+            <p className="text-center text-[#666666] text-[12px] xs:text-[16px] sm:text-[18px]">
               Agens Enterprise Package comes with a high availability management
               server that
               <br />
@@ -24,17 +24,17 @@ const Package: React.FC<{}> = (props: Props) => {
             </p>
           </div>
         </div>
-        <div className="flex flex-row">
+        <div className="flex flex-col lg:flex-row justify-center items-center">
           <div className="w-1/2 flex flex-col items-center">
             <div>
               <h5 className="text-center">
-                <strong className="text-[20px] text-[#444444]">
+                <strong className="text-[18px] xs:text-[19px] sm:text-[20px] text-[#444444]">
                   Agens HA Manager
                 </strong>
               </h5>
             </div>
-            <div className="mb-[10px] mt-[20px] text-[20px]">
-              <h5 className="text-center text-[#444444]">
+            <div className="mb-[10px] mt-[17px] xs:mt-[20px] text-[18px] xs:text-[20px]">
+              <h5 className="text-center text-[13px] xs:text-base text-[#444444]">
                 <strong className="text-[#0082cb]">HA Clustering</strong> –
                 Failover/Failback, Load-balancing
               </h5>
@@ -47,17 +47,17 @@ const Package: React.FC<{}> = (props: Props) => {
                 alt="HA Manager Image"
                 width={600}
                 height={400}
-                className="h-auto"
+                className="w-[245px] xs:w-[600px] h-auto"
               />
             </div>
             <div>
-              <h5 className="text-[#444444] text-[20px]">Replication</h5>
+              <h5 className="text-[#444444] text-[18px] xs:text-[20px]">Replication</h5>
             </div>
           </div>
-          <div className="w-1/2 flex flex-col items-center">
+          <div className="w-1/2 flex flex-col items-center mt-5 lg:mt-0">
             <div>
               <h5 className="text-center">
-                <strong className="text-[20px] text-[#444444]">
+                <strong className="text-[18px] xs:text-[19px] sm:text-[20px] text-[#444444]">
                   Agens Enterprise Manager
                 </strong>
               </h5>
@@ -105,36 +105,6 @@ const Package: React.FC<{}> = (props: Props) => {
                   'provides status reports required for improving performance',
                 ]}
               />
-              {/* <div className="h-[85px] w-[500px] border-2 rounded-[8px] bg-white border-[#0082CB] px-6 py-4 flex flex-col items-center justify-center">
-                <h4 className="text-[16px] text-center text-[#0082cb]">
-                  Backup/Restore
-                </h4>
-              </div>
-              <div className="h-[85px] w-[500px] border-2 rounded-[8px] bg-white border-[#0082CB] px-6 py-4 flex flex-col items-center justify-center">
-                <h4 className="text-[16px] text-[#0082cb] text-center">
-                  DB Monitoring Dashboard
-                </h4>
-              </div>
-              <div className="h-[85px] w-[500px] border-2 rounded-[8px] bg-white border-[#0082CB] px-6 py-4 flex flex-col items-center justify-center">
-                <h4 className="text-[16px] text-[#0082cb] text-center">
-                  Schedule Management
-                </h4>
-              </div>
-              <div className="h-[85px] w-[500px] border-2 rounded-[8px] bg-white border-[#0082CB] px-6 py-4 flex flex-col items-center justify-center">
-                <h4 className="text-[16px] text-[#0082cb] text-center">
-                  Database Audit
-                </h4>
-              </div>
-              <div className="h-[85px] w-[500px] border-2 rounded-[8px] bg-white border-[#0082CB] px-6 py-4 flex flex-col items-center justify-center">
-                <h4 className="text-[16px] text-[#0082cb] text-center">
-                  SQL Monitoring
-                </h4>
-              </div>
-              <div className="h-[85px] w-[500px] border-2 rounded-[8px] bg-white border-[#0082CB] px-6 py-4 flex flex-col items-center justify-center">
-                <h4 className="text-[16px] text-[#0082cb] text-center">
-                  Performance Management
-                </h4>
-              </div> */}
             </div>
           </div>
         </div>

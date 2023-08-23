@@ -17,7 +17,7 @@ const FrontOfCard: React.FC<{ title: string }> = ({ title }) => {
 const BackOfCard: React.FC<{ items: string[] }> = ({ items }) => {
   return (
     <div
-      className={`${styles.cardBack} absolute inset-0 w-full h-full flex justify-start items-center bg-[#0082CB] transition-all z-10 px-6`}
+      className={`${styles.cardBack} absolute inset-0 w-full h-full flex justify-start items-center bg-[#0082CB] transition-all z-10 px-6 text-[12px] xs:text-[12px]`}
     >
       <ul className=' list-disc'>
         {items.map((item, index) => (
@@ -31,7 +31,7 @@ const BackOfCard: React.FC<{ items: string[] }> = ({ items }) => {
 const FlipCard: React.FC<FlipCardProps> = ({ frontTitle, backItems }) => {
   return (
     <div
-      className={`relative h-[85px] w-[500px] rounded-[8px] text-white overflow-hidden transition-all duration-500 ${styles.card}`}
+      className={`relative h-[75px] w-[300px] xs:h-[85px] xs:w-[500px] rounded-[8px] text-white overflow-hidden transition-all duration-500 ${styles.card}`}
     >
       <FrontOfCard title={frontTitle} />
       <BackOfCard items={backItems} />
