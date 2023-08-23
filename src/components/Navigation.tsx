@@ -58,7 +58,7 @@ const Navigation: React.FC<{}> = (props: Props) => {
       }`}
     >
       <div
-        className={`h-[45px] bg-color-gradient w-full text-white hover:text-[#fac433] justify-center items-center text-[18px] transform transition-all duration-300 ease-in-out ${
+        className={`h-[45px] bg-color-gradient w-full text-white hover:text-[#fac433] justify-center items-center text-[15px] xs:text-[18px] transform transition-all duration-300 ease-in-out ${
           isScrolled ? 'flex' : 'hidden'
         }`}
       >
@@ -110,7 +110,7 @@ const Navigation: React.FC<{}> = (props: Props) => {
         </div>
       </div>
 
-      <div className=" h-2/3 flex flex-row w-full flex-wrap lg:flex-nowrap items-center justify-between text-white px-10 lg:px-0 lg:pl-8 pt-4 lg:pt-0">
+      <div className=" h-2/3 flex flex-row w-full flex-wrap lg:flex-nowrap items-center justify-between text-white px-5 sm:px-10 lg:px-0 lg:pl-8 pt-4 lg:pt-0">
         <div className="">
           <div>
             <a href="/">
@@ -121,65 +121,66 @@ const Navigation: React.FC<{}> = (props: Props) => {
                 alt="Logo Image"
                 width={235}
                 height={61}
+                className='w-[110px] h-[30px] sm:w-[180px] sm:h-[45px] lg:w-[180px] lg:h-[40px]'
               />
             </a>
           </div>
         </div>
         <button
-          className=" ml-auto mr-5 inline-flex cursor-pointer text-white lg:hidden"
+          className=" ml-auto sm:mr-5 inline-flex cursor-pointer text-white lg:hidden"
           onClick={handleClick}
         >
-          <FontAwesomeIcon className="w-[40px] h-[40px]" icon={faBars} />
+          <FontAwesomeIcon className="w-[28px] h-[26px] sm:w-[32px] sm:h-[30px] md:w-[40px] md:h-[40px]" icon={faBars} />
         </button>
-        <div className=" mr-5 w-full lg:w-auto">
+        <div className="lg:mr-2 xl:mr-5 w-full lg:w-auto">
           <ul
             className={`${
               isOpen ? 'hidden' : ''
-            } lg:flex lg:flex-row text-lg items-center lg:mt-0 mt-6`}
+            } lg:flex lg:flex-row sm:text-lg lg:text-sm xl:text-base items-center lg:mt-0 mt-4 sm:mt-6`}
           >
-            <li className="lg:ml-5 ml-0 mb-5 lg:mb-0">
+            <li className="lg:ml-5 ml-0 mb-4 sm:mb-5 lg:mb-0">
               <a href="" className="hover:text-[#fac433]">
                 <span>PRODUCTS</span>
               </a>
             </li>
-            <li className="lg:ml-5 ml-0 mb-5 lg:mb-0">
+            <li className="lg:ml-4 xl:ml-5 ml-0 mb-4 sm:mb-5 lg:mb-0">
               <a href="" className="hover:text-[#fac433]">
                 <span>USE CASES</span>
               </a>
             </li>
-            <li className="lg:ml-5 ml-0 mb-5 lg:mb-0">
+            <li className="lg:ml-4 xl:ml-5 ml-0 mb-4 sm:mb-5 lg:mb-0">
               <a href="" className="hover:text-[#fac433]">
                 <span>SERVICES</span>
               </a>
             </li>
-            <li className="lg:ml-5 ml-0 mb-5 lg:mb-0">
+            <li className="lg:ml-4 xl:ml-5 ml-0 mb-4 sm:mb-5 lg:mb-0">
               <a href="" className="hover:text-[#fac433]">
                 <span>RESOURCES</span>
               </a>
             </li>
-            <li className="lg:ml-5 ml-0 mb-5 lg:mb-0">
+            <li className="lg:ml-4 xl:ml-5 ml-0 mb-4 sm:mb-5 lg:mb-0">
               <a href="" className="hover:text-[#fac433]">
                 <span>BLOG</span>
               </a>
             </li>
-            <li className="lg:ml-5 ml-0 mb-5 lg:mb-0">
+            <li className="lg:ml-4 xl:ml-5 ml-0 mb-4 sm:mb-5 lg:mb-0">
               <a href="" className="hover:text-[#fac433]">
                 <span>COMPANY</span>
               </a>
             </li>
-            <li className="lg:ml-5 ml-0 mb-5 lg:mb-0">
+            <li className="lg:ml-4 xl:ml-5 ml-0 mb-4 sm:mb-5 lg:mb-0">
               <a href="" className="hover:text-[#fac433]">
                 <span>IR</span>
               </a>
             </li>
-            <li className="lg:ml-5 ml-0 mb-5 lg:mb-0">
+            <li className="lg:ml-4 xl:ml-5 ml-0 mb-4 sm:mb-5 lg:mb-0">
               <button className=" bg-[#022EA9] px-3 py-1 rounded-[0.225rem]">
                 <a href="" className="hover:text-[#fac433]">
                   TRY FREE
                 </a>
               </button>
             </li>
-            <li className="lg:ml-5 ml-0 mb-2 lg:mb-0">
+            <li className="lg:ml-4 xl:ml-5 ml-0 mb-0 sm:mb-2 lg:mb-0">
               {session ? (
                 <Link href="/profile">
                   <FontAwesomeIcon

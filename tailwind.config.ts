@@ -14,6 +14,11 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      screens: {
+        xxs: '375px',
+        xs: '425px',
+        md: '850px',
+      },
       boxShadow: {
         custom: '1px 1px 3px 2px rgba(229, 229, 229, 1)',
       },
