@@ -4,7 +4,7 @@ type Props = {};
 
 const Footer: React.FC<{}> = (props: Props) => {
   return (
-    <section className="max-h-[40vh] bg-[#1E2329]">
+    <section className="max-h-[40vh] bg-[#1E2329] hidden lg:flex">
       <footer className="py-[64px] text-[14.4px] leading-[25px] px-[250px] text-white flex flex-row justify-between">
         <div className='flex flex-col'>
           <div className=' mb-2 font-bold'>PRODUCTS</div>

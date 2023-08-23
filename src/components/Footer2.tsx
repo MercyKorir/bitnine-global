@@ -23,8 +23,8 @@ type Props = {};
 
 const Footer2: React.FC<{}> = (props: Props) => {
   return (
-    <section className="min-h-[10vh] bg-[#1E2329] py-[32px] px-[230px] overflow-x-hidden">
-      <div className="flex flex-row justify-between items-center text-[#ababab] text-[14.4px] leading-[20px] text-center">
+    <section className="min-h-[10vh] bg-[#1E2329] py-[32px] px-2 md:px-[230px] overflow-x-hidden">
+      <div className="flex flex-row justify-center md:justify-between items-center text-[#ababab] text-[14.4px] leading-[20px] text-center">
         <div className=" font-[400px]">
           <FontAwesomeIcon
             className="w-[14.4px] h-[14.4px]"
@@ -33,7 +33,7 @@ const Footer2: React.FC<{}> = (props: Props) => {
           {' '}
           2023 by Bitnine Global Inc. All Rights Reserved.
         </div>
-        <div className="flex flex-row justify-end items-center text-[#ababab] text-[14.4px] leading-[20px] text-center">
+        <div className="md:flex hidden flex-row justify-end items-center text-[#ababab] text-[14.4px] leading-[20px] text-center">
           <div className={`p-2 ${styles.topBottomG} hover:text-white cursor-pointer ml-14 text-[#fac433]`}>
             <a href="">
               <FontAwesomeIcon className="w-5 h-5" icon={faGithub} />

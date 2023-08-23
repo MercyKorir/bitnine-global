@@ -6,7 +6,7 @@ type Props = {};
 
 const Package: React.FC<{}> = (props: Props) => {
   return (
-    <section className="min-h-[100vh] bg-white px-3 xs:px-0 py-16 xs:py-20">
+    <section className="min-h-fit bg-white px-3 xs:px-0 sm:px-5 md:px-0 py-16 xs:py-20">
       <div className="flex flex-col items-center gap-6">
         <div className="flex flex-col">
           <div className=" mb-[14px]">
@@ -47,7 +47,7 @@ const Package: React.FC<{}> = (props: Props) => {
                 alt="HA Manager Image"
                 width={600}
                 height={400}
-                className="w-[245px] xs:w-[600px] h-auto"
+                className="w-[245px] xxs:w-[400px] xs:w-[600px] h-auto"
               />
             </div>
             <div>
