@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        'color-gradient': 'url("https://bitnine.net/wp-content/uploads/2023/08/img-header-banner.png")',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },

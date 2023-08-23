@@ -1,13 +1,13 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
-import styles from '../styles/Hero.module.css'
+import styles from '../styles/Hero.module.css';
 
 type Props = {};
 
 const Hero: React.FC<{}> = (props: Props) => {
   return (
-    <section className="min-h-[83vh] bg-white">
-      <div className="flex flex-col items-center p-16">
+    <section className={`min-h-fit bg-white mt-[17vh]`}>
+      <div className="flex flex-col items-center p-16 pb-24">
         <div className="">
           <Image
             src={
@@ -46,17 +46,23 @@ const Hero: React.FC<{}> = (props: Props) => {
           </p>
         </div>
         <div className=" flex flex-row justify-between gap-10 text-white mt-16">
-          <div className={`${styles.heroButton} bg-[#022EA9] px-5 py-2 rounded-[0.225rem] hover:text-[#fac433] cursor-pointer`}>
+          <div
+            className={`${styles.heroButton} bg-[#022EA9] px-5 py-2 rounded-[0.225rem] hover:text-[#fac433] cursor-pointer`}
+          >
             <a href="" className="">
               <span className=" font-semibold">CONTACT</span>
             </a>
           </div>
-          <div className={`${styles.heroButton} bg-[#022EA9] px-5 py-2 rounded-[0.225rem] hover:text-[#fac433] cursor-pointer`}>
+          <div
+            className={`${styles.heroButton} bg-[#022EA9] px-5 py-2 rounded-[0.225rem] hover:text-[#fac433] cursor-pointer`}
+          >
             <a href="" className="">
               <span className=" font-semibold">BROCHURE</span>
             </a>
           </div>
-          <div className={`${styles.heroButton} bg-[#022EA9] px-5 py-2 rounded-[0.225rem] hover:text-[#fac433] cursor-pointer`}>
+          <div
+            className={`${styles.heroButton} bg-[#022EA9] px-5 py-2 rounded-[0.225rem] hover:text-[#fac433] cursor-pointer`}
+          >
             <a href="" className="">
               <span className=" font-semibold">BLOG</span>
             </a>

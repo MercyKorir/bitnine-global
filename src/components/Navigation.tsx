@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import styles from '../styles/Navigation.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -27,8 +27,35 @@ type Props = {};
 
 const Navigation: React.FC<{}> = (props: Props) => {
   const { data: session } = useSession();
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  const handleScroll = () => {
+    if (window.scrollY > 0) {
+      setIsScrolled(true);
+    } else {
+      setIsScrolled(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('resize', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('resize', handleScroll);
+    };
+  }, [isScrolled]);
   return (
-    <nav className="flex flex-col bg-black min-h-[17vh] w-full">
+    <nav
+      className={`flex flex-col bg-black min-h-fit w-full fixed top-0 z-50 ${isScrolled ? 'pb-3' : 'pb-5'}`}
+    >
+      <div
+        className={`h-[45px] bg-color-gradient w-full text-white hover:text-[#fac433] justify-center items-center text-[18px] transform transition-all duration-300 ease-in-out ${
+          isScrolled ? 'flex' : 'hidden'
+        }`}
+      >
+        <a href="">AgensSQL로 보안 기능들을 강화시키세요.</a>
+      </div>
       <div className="h-1/3 flex flex-row justify-end px-1 items-center text-white">
         <div className="">
           <a href="" className="hover:text-slate-400">
