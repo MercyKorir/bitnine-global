@@ -9,7 +9,7 @@ import Package from '@/components/Package';
 
 export default function Home() {
   return (
-    <div className="font-monda">
+    <div className="font-monda overflow-x-hidden">
       <Navigation />
       <Hero />
       <About />
