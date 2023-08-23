@@ -10,7 +10,7 @@ interface FadeInCardProps {
 const FadeInCard: React.FC<FadeInCardProps> = ({ imageUrl, backItems }) => {
   return (
     <div
-      className={`${styles.card} w-1/3 min-w-[330px] min-h-[230px] shadow-custom border-[1px] border-[#D1D1D1] hover:border-[#0082CB] bg-white rounded-[10px] h-fit px-[5%] py-[3%] relative`}
+      className={`${styles.card} w-1/3 min-w-[280px] min-h-[180px] xxs:min-w-[330px] xxs:min-h-[210px] xs:min-w-[350px] xs:min-h-[250px] sm:min-w-[330px] sm:min-h-[230px] md:min-w-[315px] md:min-h-[225px] xl:sm:min-w-[330px] xl:min-h-[230px] shadow-custom border-[1px] border-[#D1D1D1] hover:border-[#0082CB] bg-white rounded-[10px] h-fit px-[5%] py-[3%] relative`}
     >
       <Image
         src={imageUrl}
