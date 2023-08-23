@@ -61,7 +61,7 @@ const SignUpForm: React.FC<{}> = (props: Props) => {
       try {
         setLoading(true);
         const res = await axios.post(
-          'http://localhost:3000/api/auth/signUp',
+          '/api/auth/signUp',
           data
         );
         if (res?.data?.success) {
