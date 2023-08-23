@@ -3,7 +3,7 @@ import Image from 'next/image';
 import styles from '../styles/Navigation.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faSearch, faPerson, faBars } from '@fortawesome/free-solid-svg-icons';
+import { faSearch, faBars, faUser } from '@fortawesome/free-solid-svg-icons';
 import { useSession } from 'next-auth/react';
 import {
   faFacebook,
@@ -20,7 +20,7 @@ library.add(
   faLinkedinIn,
   faMedium,
   faSearch,
-  faPerson,
+  faUser,
   faBars
 );
 
@@ -185,7 +185,7 @@ const Navigation: React.FC<{}> = (props: Props) => {
                 <Link href="/profile">
                   <FontAwesomeIcon
                     className="w-[23px] h-[23px]"
-                    icon={faPerson}
+                    icon={faUser}
                   />
                 </Link>
               ) : (
